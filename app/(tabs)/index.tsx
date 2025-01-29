@@ -1,3 +1,4 @@
+import { IconSymbol } from "@/components/ui/IconSymbol";
 import MovieCard from "@/components/ui/MovieCard";
 import { Text, View, TextInput, Pressable, FlatList } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -13,7 +14,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView className="flex-1 px-5 py-3 bg-[#121212]">
       {/* Header */}
-      <Text className="font-bold text-4xl text-blue-500 mb-5">
+      <Text className="font-bold text-4xl text-red-500 mb-5">
         Movies-Notes
       </Text>
 
@@ -24,7 +25,7 @@ export default function HomeScreen() {
           placeholder="Search for movie/series"
         />
         <Pressable className="px-3">
-          <Text className="text-3xl">🔍</Text>
+          <IconSymbol size={28} name="search.fill" color={"#fff"} />
         </Pressable>
       </View>
 
